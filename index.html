@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mon Portfolio</title>
+	<link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/bootstrap .css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|Roboto|Bebas+Neue">
+</head>
+<body>
+    <div class="menu-phone">
+    <button id="menu-button"></button>
+    </div>
+    <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Accueil</a></li><hr>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#localisation" class="nav-link">Localisation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="news.html" class="nav-link">Articles</a></li>
+                
+            </ul>  
+        </nav>
+    </header>
+    <!--<iframe src="ShortArticles.html" width="100%" height="300" frameborder="0"></iframe>-->
+    <section>
+        <div class="capsule_container">
+            <div class="main_bloc_container">
+
+            </div>
+            <div class="containers1" id="apropos">
+                <h1> LOUVEL MARVIN</h1>
+                <h2>À propos</h2>
+                <p>Etudiant depuis un jour à Supinfo, je cumule déjà une erreur de comprhéension d'exercice et un retard.
+                    Je ne suis donc pas l'élément idéal à contacter. Mais je peux vous orienter vers un collègue.
+                </p>
+                <h2>Programmation</h4>
+                    <ul>
+                        <li>HTML - Débutant </li>
+                        <li>Solidity - Intermédiaire</li>
+                        <li>C# - Coussi-coussa </li>
+                        <li>C - Débutant</li>
+                        <li>Python - Ca dépend des jours</li>
+                        </div>
+            
+            </div>
+        </div>
+    </section>
+    <div class="corps">
+        <div class="body_container"></div>
+        <div class="CV">
+        <h2 id="cv">CV</h2>
+
+        <h3>Formation</h3>
+        <table>
+            <tr>
+                <td>2017 - 2018</td>
+                <td>Faculté d'informatique de Nice - Sans Diplôme</td>
+            </tr>
+            <tr>
+                <td>2023 - 2024</td>
+                <td>BI Supinfo Distanciel - En cours</td>
+            </tr>
+        </table>
+
+        <h3>Expériences</h3>
+        <ul>
+            <li>Amalea - Developpeur Blockchain - 2017-2019 </li>
+            <li>SAS Enigmaniac - Président - Depuis 2019</li>
+        </ul>
+
+        <h3>Compétences</h3>
+        <h4>Programmation</h4>
+        <ul>
+            <li>HTML - Débutant </li>
+            <li>Solidity - Intermédiaire</li>
+            <li>C# - Coussi-coussa </li>
+            <li>C - Débutant</li>
+            <li>Python - Ca dépend des jours</li>
+        </ul>
+        <h4>Qualités</h4>
+        <ul>
+            <li>Communication</li>
+            <li>Résolution de problèmes</li>
+        </ul>
+        </section>
+    </div>
+    </div>
+    <div class="localisation">
+    <section>
+        <h2>Localisation</h2>
+        <a href="https://www.google.com/maps/place/43%C2%B032'18.6%22N+6%C2%B027'43.8%22E/@43.538512,6.462167,17z/data=!3m1!4b1!4m4!3m3!8m2!3d43.538512!4d6.462167?entry=ttu">5 Boulevard Maréchal Foch, 83300, Draguignan, France 
+            <img src="/source/image/Carte_localisation.png" alt="Plan avec addresse"/>
+        </a>
+    </section>
+</div>
+<div class="infos">
+    <section>
+        <h2>Informations de contact</h2>
+        <ul>
+            <li>Email : marvin.louvel@supinfo.com</li>
+            <li>Téléphone : +33784443564</li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="contact">Contactez-moi</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="3168e919-c208-4dd8-9d91-5e6ec9801c65">
+
+
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Delamain Louis" title="Delamain Louis" required><br>
+            
+                
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com" title="exemple@email.com"><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Votre message..." title="Votre message..."></textarea><br>
+
+            <button type="submit" value="Envoyer">Envoyer</button>
+        </form>
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 Marvin Louvel. Tous droits réservés.</p>
+</footer>
+</html>

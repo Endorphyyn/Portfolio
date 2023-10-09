@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|Roboto&effect=anaglyph|Bebas+Neue);
+:root {
+    --BL: rgb(255,0,50);
+	--color-theme-1: #9EFFA3 ;
+	--color-theme-2: #90e8d6c5  ;
+	--color-theme-2-t: #90e8d6  ;
+	--color-theme-3: #D2DB92 ;
+	--color-theme-4: #F5EDD3 ; 
+	--color-theme-5: #E8B790 ;
+	--color-theme-white: #ffffff;
+	--color-theme-black: #000;
+}
+body {
+	background-image: url(/source/image/Background.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0%;
+}
+header {
+	background-color: var(--BL);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 100%;
+	max-width: 1920px;
+	min-height: 0%;
+}
+footer {
+	background-image: url(source/image/footer.jpeg);
+	background-size: cover;
+	min-width: 100%;
+	min-height: 100%;
+	color: #000;
+	padding: 5%;
+
+}
+h1 {
+	font-family: 'Bebas eue', sans-serif;
+	font-weight: 900;
+}
+h2 {
+	font-family: 'Roboto';
+}
+p {
+	font-family: 'Incosolata', sans-serif;
+}
+button{
+	background-color: #ff00ff00;
+}
+.menu-phone {
+	display: none;
+	flex-wrap: nowrap;
+	background-color: var(--color-theme-2-t);
+}
+#menu-button {
+    display: none;
+    padding: 10px 20px; /* Espacement interne pour le bouton */
+    background-image: url(source/image/menu.png);
+	background-size: cover;
+    color: var(--color-theme-black); /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur en forme de main lors du survol */
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur */
+}
+.main_bloc_container {
+	display: grid;
+	background-size: space;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	text-align: left;
+	max-height: 100%;
+	min-height: 540px;
+	grid-row: 1;
+	grid-column: 1 / 4;
+	order: 1;
+}
+.main_bloc_container:hover  {
+    /*transform: scale(0.9);  Zoom de 100% pour les éléments enfants avec la classe "container" */
+    filter: brightness(0.7);
+	filter: blur(5px); 
+	order : 0;
+	z-index: 0;
+}
+
+.presentation {
+	margin-right: 70%;
+	text-align: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color: var(--color-theme-1);
+	border-style: double;
+}
+.presentation h1 {
+	margin-right: 70%;
+	
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 200%;
+	background-color: var(--color-theme-white);
+	border-style: double;
+}
+.presentation h2 {
+	margin-right: 70%;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 200%;
+	background-color: #ffffff;
+	border-style: double;
+}
+.presentation p {
+	margin-right: 70%;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 200%;
+	background-color: #ffffff;
+	border-style: double;
+}
+.presentation section {
+	margin-right: 70%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: #ffffff;
+	border-style: double;
+}
+.presentation img {
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+	mask-border-slice: 5;
+}
+.containers1 {
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	display: inline-table;
+    max-width: 250px; 
+	margin: 10% 10% ;
+    padding: 20px; 
+    background-color: #f0f0f0;
+	grid-row: 1;
+	grid-column: 1/3; 
+	order:1;
+	z-index: 1;
+}
+.CV{
+	background-color: var(--color-theme-white);
+	padding: 10%;
+	color: #000;
+}
+.container-noir {
+    background-color: var(--color-theme-2);
+    color: #000000;
+    padding: 10px; 
+    display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+.colonne {
+    flex: 1; 
+    padding: 10px; 
+	margin-block: 0px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 2vh;
+    margin: 0;
+	color: var(--color-theme-black);
+}
+nav ul li {
+	display: flex;
+	flex-direction: inherit;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000; 
+    display: inline-flex;
+    padding: 2vh 2vh; 
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.corps{
+	text-align: left;
+	color: #fdfdfd;
+	background-color: var(--color-theme-2);
+	margin: 0% 0% 0% 0%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 0%;
+}
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    flex-basis: calc(33.33% - 10px); 
+    margin-bottom: 20px;
+    background-color:#f0f0f0;
+    padding: 10px;
+    border-radius: 5%;
+	border: #000;
+    box-sizing: border-box;
+}
+.capsule_container{
+	display: grid;
+	grid-template-columns: repeat(3 / 1fr);
+	grid-template-rows: repeat(2 / 1fr);
+}
+.body_container{
+	display: grid;
+	grid-columns: repeat(1 / 3);
+	grid-template-rows: auto;
+}
+.nav{
+	background-color: var(--color-theme-2);
+}
+.localisation{
+	padding: 10%;
+	background-color: var(--color-theme-black);
+	display: inline-block;
+}
+.localisation h2 {
+	color: var(--color-theme-white);
+	font-weight: bold;
+	font-size: 25pt;
+}
+.localisation a {
+	color: var(--color-theme-white);
+	font-size: larger;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.localisation a img {
+	max-width: 50%;
+	max-height: 50%;
+	padding: 5%;
+}
+.infos{
+	padding: 2%;
+	background-color: #fdfdfd;
+	color: #000;
+	text-align: center;
+}
+ul {
+	list-style-type: disc; /* Type de puce */
+  }
+  
+li {
+	list-style-position: inside; /* Position de la puce à l'intérieur du texte */
+	line-height: 1.5; /* Hauteur de ligne pour un meilleur espacement */
+  }
+label {
+	margin: 5px;
+	line-height: 2.5;
+}
+input {
+	border-radius: 20px;
+	border: 1px solid;
+	margin: 5px;
+	padding: 10px;
+}
+textarea {
+	border-radius: 20px;
+	border: 1px solid;
+	margin: 5px;
+	padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 2vh;
+    margin: 0;
+    display: flex;           /* Ajouté pour activer Flexbox */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;     /* Centrer verticalement */
+    flex-wrap: wrap;         /* Permettre aux éléments de se déplacer à la ligne suivante si nécessaire */
+}
+
+nav ul li {
+    display: inline-flex;    /* Modifié pour inline-flex */
+}
+/* Couleur de base des liens */
+nav ul li a {
+    color: var(--color-theme-black);
+    text-decoration: none; /* Supprimer le soulignement */
+    transition: color 0.3s; /* Transition douce lors du changement de couleur */
+}
+
+/* Couleur des liens lorsqu'ils sont survolés */
+nav ul li a:hover {
+    color: var(--color-theme-white); /* Une nuance de bleu plus foncée */
+}
+
+/* Couleur des liens lorsqu'ils sont cliqués (actifs) */
+nav ul li a:active {
+    color: #003d7a; /* Une nuance de bleu encore plus foncée */
+}
+
+/* Couleur des liens déjà visités */
+nav ul li a:visited {
+    color: #845EC2; /* Pourpre par exemple */
+}
+/* Lorsque la largeur de l'écran est inférieure ou égale à 768 pixels */
+@media (max-width: 768px) {
+	.menu-phone {
+		display: flex;
+		flex-wrap: nowrap;
+		background-color: var(--color-theme-2-t);
+	}
+    /* Cacher le menu .nav */
+	.nav {
+		display: none;
+	}
+	
+	/* Afficher le bouton */
+		#menu-button {
+		display: flex;
+		background-color: var(--color-theme-2);
+		min-width: 3em;
+		min-height: 3em;
+		max-width: 3em;
+		max-height: 3em;
+	}
+	.main_bloc_container{
+	grid-row: 1;
+	}
+    .containers2 {
+		grid-row: 3;
+		grid-column: 1;
+        width: 100%;      /* Prend toute la largeur disponible */
+        margin: 10% 0;    /* Ajustement de la marge pour qu'elle soit cohérente */
+        order: 2;         /* Assurez-vous qu'il est affiché après .containers1 */
+    }
+
+    .containers1 {
+		grid-row: 1;
+		grid-column: 2;
+        width: 100%;      /* Prend toute la largeur disponible */
+
+        order: 1;         /* Assurez-vous qu'il est affiché avant .containers2 */
+    }
+}
+@media (min-width: 1204) {
+	    /* Cacher le menu .nav */
+		.nav {
+			display: block;
+		}
+}
+button {
+	margin: 2%;
+	min-width: 9em;
+	min-height: 3em;
+	background-color: var(--color-theme-2-t);
+	border-radius: 20px;
+	border: 1px solid var(--color-theme-2);
+	box-shadow: inset;
+}
